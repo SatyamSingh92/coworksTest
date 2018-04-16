@@ -9,7 +9,6 @@ body {
     background-color: white;
     background-size: cover;
     background-position: center;
-    font-family: HUGEAvantGardeBold;
     font-weight: 300;
     position: relative;
     height: 100vh;
@@ -34,12 +33,6 @@ body {
     height: 600px;
     padding: 100px;
 }
-
-
-
-/**********************************************
-*** PLAYERS
-**********************************************/
 
 .player-name {
     font-size: 40px;
@@ -144,6 +137,3 @@ i {
     height: 50px;
     box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
 }
-
-.winner { background-color: #f7f7f7; }
-.winner .player-name { font-weight: 300; color: #EB4D4D; }

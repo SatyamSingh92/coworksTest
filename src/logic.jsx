@@ -2,16 +2,17 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Player from './components/player';
 import Buttons from './components/button';
+ 
+// sherin.thomas@cowrks.com 
 
-const gameConf = {
+const gaameState = {
   playerState: [
     {
       playerName: "P1",
       playerId: 1,
       totalscore: 0,
       eachroundscore: 0,
-      isActive: true,
-      isWinner: null
+      isActive: true
     },
     {
       playerName: "P2",
@@ -19,7 +20,6 @@ const gameConf = {
       totalscore: 0,
       eachroundscore: 0,
       isActive: false,
-      isWinner: null
     }
   ],
   diceValue: 0
@@ -30,12 +30,12 @@ const gameConf = {
 class App extends Component {
   constructor(props){
     super(props);
-    this.state = gameConf;
+    this.state = gaameState;
 
   }
 
   newGame(){
-    this.setState(gameConf);
+    this.setState(gaameState);
   }
 
   onRollDice(){
@@ -101,7 +101,6 @@ class App extends Component {
                 playerName={ player.playerName }
                 eachroundscore={ player.eachroundscore }
                 totalscore={ player.totalscore }
-                isWinner={ player.isWinner }
                 isActive={ player.isActive }
                 key={ player.playerId }
                 pId={ player.playerId }
